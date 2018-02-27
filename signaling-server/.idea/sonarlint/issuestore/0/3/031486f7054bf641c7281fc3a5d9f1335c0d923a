@@ -1,0 +1,16 @@
+
+jsquid:S3008"PRename this field "Rooms" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äšÂ½üÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(¼öìÈ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(åÀ¯ªùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ïò¨šúÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(©üŽ¼ýÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ä¤¼à
+;squid:S1170"!Make this final field static too.(ƒ ã±þÿÿÿÿ
+;squid:S1170"!Make this final field static too.(Øžûƒúÿÿÿÿ
+lsquid:S00116"QRename this field "CREATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ ã±þÿÿÿÿ
+jsquid:S00116"ORename this field "JOIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øžûƒúÿÿÿÿ
