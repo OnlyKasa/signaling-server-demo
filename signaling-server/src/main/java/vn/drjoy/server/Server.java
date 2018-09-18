@@ -21,7 +21,7 @@ import java.util.Set;
 public class Server extends WebSocketServer {
     private final String CREATE = "GETROOM";
     private final String JOIN = "ENTERROOM";
-
+    private final String ERROR = "WRONGROOM";
     private static Map<Integer,Set<WebSocket>> Rooms = new HashMap<Integer, Set<WebSocket>>();
     private int roomId;
 
@@ -74,8 +74,12 @@ public class Server extends WebSocketServer {
                 roomId = object.getInt("value");
                 System.out.println("New client joined room " + roomId);
                 session = Rooms.get(roomId);
-                session.add(webSocket);
-                Rooms.put(roomId, session);
+                if (session != null) {
+                    session.add(webSocket);
+                    Rooms.put(roomId, session);
+                }else {
+                    webSocket.send("{\"type\":\""+ ERROR + "\",\"value\":" + roomId +"}");
+                }
             } else {
                 sendToAll(webSocket, message);
             }
